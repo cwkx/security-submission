@@ -1,0 +1,224 @@
+body {
+    background-color: #fff;
+    color: #232425;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 4px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ccc;
+    border-radius: 5px;
+    border-width: 0px;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-primary:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.dropdown {
+    display: inline-flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 96%);
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+/* search... */
+.myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 16px;
+    padding: 8px 8px 8px 36px;
+    width: calc(100%);
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    position: relative;
+}
+
+.dropdown-content .search-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.scrollable-list {
+    max-height: 370px;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content a:focus {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#exploitTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+#exploitTable td,
+
+#exploitTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#exploitTable th:nth-child(7) {
+    width: 6%;
+}
+
+#exploitTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#exploitTable tr:hover {
+    background-color: #eaeaea;
+}
+
+#exploitTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #d3d3d3;
+    color: black;
+}
+
+.no-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.delete-btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: 5px;
+}
+
+.badge {
+    color: #161617;
+    background-color: #cfcfcf;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 2px;
+    display: inline-flex;
+    align-items: center;
+    min-width: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+}
+
+.badge-delete-btn {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.drag-handle {
+    cursor: move;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 5px;
+}
+
+.sortable-placeholder {
+    border: 1px dashed #ddd;
+    background-color: #f9f9f9;
+}
+
+.color-picker-btn {
+    cursor: pointer;
+    color: grey;
+    margin-right: 5px;
+    padding-top: 4px;
+}
+
+.color-dropdown {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.info {
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    background-color: #ededed;
+    border-left: 6px solid #c9c9c9;
+}
+
+#mysterySolution {
+    width: 50%;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+    padding: 8px;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+#cisUsername {
+    border-color: transparent;
+    background-color: #eee;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 4px;
+}

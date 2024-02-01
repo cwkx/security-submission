@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cybersecurity Assignment</title>
+    <script src="libs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-3">
+        <h1><i class="fa-solid fa-shield-halved"></i> Cybersecurity Assignment</h1>
+        <p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="cisUsername">Enter your CIS username:</label>
+                    <input type="text" id="cisUsername" class="form-control"  placeholder="Type username...">
+                </div>
+                <br>
+                <div class="col-sm-8">
+                    <button class="btn btn-primary mt-2" id="downloadButton"><i class="fa fa-download"></i> Download</button>
+                    <button class="btn btn-primary mt-2" id="loadButton"><i class="fa fa-upload"></i> Load submission</button>
+                </div>
+                <br>
+                <textarea id="mysterySolution" placeholder="Type mystery solution..."></textarea>
+            </div>
+        </p>
+        <table id="exploitTable" class="table">
+            <thead>
+                <tr>
+                    <th>Descriptor</th>
+                    <th>Object</th>
+                    <th>Location(s)</th>
+                    <th>Asset(s)</th>
+                    <th>Exploit(s)</th>
+                    <th>Mitigation(s)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p><button class="btn btn-primary add"><i class="fa fa-plus-circle"></i> Add new vulnerability</button></p>
+        <div class="info">
+            <p><b>Information</b></p>
+            <p>
+                This assignment requires a bespoke approach for timely, fair and consistent marking due to the very large amount of fine-grained individually-weighted responses and large classes.</p>
+            <ul>
+            <li>There are numerous <b>multiple correct tag combinations</b> to describe and mitigate vulnerabilities. <b>You won't lose marks</b> where there is ambiguity.</li>
+            <li>Do not worry about the best combination of tags to describe something. It's not marked by finding the exact correct combination of tags (there isn't one).</li>
+            <li>There are many, many different correct solutions that can get 100%.</li>
+            <li>Marks are awarded for certain combinations/pairs/groups of tags in an overlapping non-linear way.</li>
+            <li>You should add all relevant tags to enrich your responses. Exploits should maximise the severity of the threat vectors, and mitigations should completely remove the threat and minimise the attack surface.</li>
+            <li>However, marks can be deducted for having too many tags or for specific incorrect tag combinations—basically don't try and guess things you haven't found in the VM.</li>
+            <li>Where possible, try to avoid the catch-all "Insecure" descriptor and use something more specific instead (although it is unavoidable in several cases).</li>
+            <li>An optimised distance matrix and clustering strategy is used to detect collusion. Discrepancy in these cases can be severely penalised if identified.</li>
+            <li>Marking is not fully automated, responses will be checked manually.</li>
+            <li>There is no local storage or server backend with this; to save your progress click download, and to resume you can load the submission to resume.</li>
+            <li>Don't try to hack this system, e.g. to allow more rows. Manually editing the downloaded file could result in a parsing error and you getting zero marks.</li>
+            <li>Colours do nothing and do not impact the marking; they can be optionally used to help organise your findings.</li>
+            </ul>
+            <p>If you have any feedback, suggestions or spot any bugs, please let me know via email or drop into my office hour.</p>
+        </div>
+        <p style="color: gray;">@cwkx</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
